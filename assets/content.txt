@@ -1,0 +1,16 @@
+Copy
+Title: Zesty
+Paragraph: A photography project by Ella Fieldling
+
+Colors
+Background: #fbdd74
+Text: #294910
+
+Fonts
+Poppins (weights: 500 and 800)
+https://fonts.google.com/specimen/Poppins?preview.text_type=custom
+
+Links
+Demo: https://vwitf.csb.app/
+GitHub repo: https://github.com/superhi/zesty
+Figma file: https://www.figma.com/file/A8AsiOM9imlpw8ZxOvRXvy/Project_1_Zesty?node-id=7%3A4
