@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="title">
-        <h1>Zesty</h1>
+        <h1>Pesty</h1>
         <h2>
           A photography project <br /> by Ella Fieldling
         </h2>
