@@ -11,6 +11,15 @@ const images = [cabbage, mango, fig, gaze, peach, avocado];
 
 const App = () => {
   const [currentImage, setCurrentImage] = useState(0);
+
+  const handleClick = () => {
+    alert("hey");
+  };
+
+  const handleChange = (event) => {
+    console.log(event.target.value);
+  };
+
   return (
     <div className="App">
       <div className="title">
@@ -18,7 +27,13 @@ const App = () => {
         <h2>
           a photography project <br /> by Ella Fieldling
         </h2>
-        <button onClick={() => alert("hey")}>click here</button>
+        <button onClick={handleClick}>click here</button>
+        <input
+          type="text"
+          name="example"
+          autoComplete="off"
+          onChange={handleChange}
+        ></input>
       </div>
       <div className="image-container"></div>
       <img alt="" src={images[0]} />
