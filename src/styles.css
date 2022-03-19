@@ -1,13 +1,13 @@
 body {
-  background: #fbdd74;
-  color: #294910;
+  background: #f7d3c6;
+  color: #ff7f8c;
   height: 100vh;
   width: 100vh;
   margin: 0;
   position: relative;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Bungee", cursive;
 }
 
 .App {
