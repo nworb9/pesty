@@ -10,17 +10,10 @@ body {
   font-family: "Bebas Neue", cursive;
 }
 
-.App {
+section {
   display: flex;
   height: 100vh;
   justify-content: space-between;
-}
-
-.image-container {
-  background: #fff;
-  margin: 0;
-  position: relative;
-  width: 50vh;
 }
 
 h1 {
@@ -38,7 +31,14 @@ h2 {
   font-weight: normal;
 }
 
-h3 {
+figure {
+  background: #fff;
+  margin: 0;
+  position: relative;
+  width: 50vh;
+}
+
+figcaption {
   font-size: 36 px;
   font-weight: normal;
   position: fixed;
@@ -52,32 +52,8 @@ h3 {
 
 img {
   height: 100vh;
-  object-fit: cover;
+  object-fit: contain;
   object-position: 0% 100%;
   position: fixed;
-  width: 50%;
-}
-
-.morning {
-  object-position: 0% 100%;
-}
-
-.pair {
-  object-position: 30% 70%;
-}
-
-.hair {
-  object-position: 30% 70%;
-}
-
-.teeth {
-  object-position: 25% 75%;
-}
-
-.gang {
-  object-position: 70% 30%;
-}
-
-.king {
-  object-position: 35% 65%;
+  width: 100%;
 }

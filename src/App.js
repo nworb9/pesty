@@ -27,23 +27,24 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <div className="title">
+    <section>
+      <header>
         <h1>PIGSTY</h1>
         <h2>curated by emma</h2>
-      </div>
-      <div className="image-container">
-        <h3>
+      </header>
+
+      <figure>
+        <figcaption>
           {currentImage + 1} / {images.length}
-        </h3>
+        </figcaption>
         <img
           className={images[currentImage].name}
           alt="a carousel of pig pictures"
           src={images[currentImage].img}
           onClick={handleClick}
         />
-      </div>
-    </div>
+      </figure>
+    </section>
   );
 };
 
