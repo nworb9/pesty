@@ -36,13 +36,12 @@ const App = () => {
         <h3>
           {currentImage + 1} / {images.length}
         </h3>
-        <div className={images[currentImage].name}>
-          <img
-            alt="a carousel of pig pictures"
-            src={images[currentImage].img}
-            onClick={handleClick}
-          />
-        </div>
+        <img
+          className={images[currentImage].name}
+          alt="a carousel of pig pictures"
+          src={images[currentImage].img}
+          onClick={handleClick}
+        />
       </div>
     </div>
   );
