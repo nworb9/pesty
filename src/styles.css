@@ -7,7 +7,7 @@ body {
   position: relative;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: "Bungee", cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .App {
@@ -36,4 +36,48 @@ h2 {
   line-height: 1.2;
   margin: 0 20px 20px;
   font-weight: normal;
+}
+
+h3 {
+  font-size: 36 px;
+  font-weight: normal;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  bottom: 0;
+  color: #ff7f8c;
+  margin: 0 auto;
+  width: 50%;
+}
+
+img {
+  height: 100vh;
+  object-fit: cover;
+  object-position: 15% 85%;
+  position: fixed;
+  width: 50%;
+}
+
+.morning {
+  object-position: 0% 100%;
+}
+
+.pair {
+  object-position: 15% 85%;
+}
+
+.hair {
+  object-position: 15% 85%;
+}
+
+.teeth {
+  object-position: 15% 85%;
+}
+
+.gang {
+  object-position: 15% 85%;
+}
+
+.king {
+  object-position: 15% 85%;
 }
