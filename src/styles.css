@@ -2,7 +2,7 @@ body {
   background: #f7d3c6;
   color: #ff7f8c;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   margin: 0;
   position: relative;
   text-rendering: optimizeLegibility;
@@ -34,12 +34,14 @@ h2 {
 figure {
   background: #fff;
   margin: 0;
+  margin-right: 0;
+  margin-left: auto;
   position: relative;
-  width: 50vh;
+  width: 50vw;
 }
 
 figcaption {
-  font-size: 36 px;
+  font-size: 4vw;
   font-weight: normal;
   position: fixed;
   text-align: center;
@@ -48,11 +50,12 @@ figcaption {
   color: #ff7f8c;
   margin: 0 auto;
   width: 50%;
+  padding: 20px 0;
 }
 
 img {
   height: 100vh;
-  object-fit: contain;
+  object-fit: scale-down;
   object-position: 0% 100%;
   position: fixed;
   width: 100%;
