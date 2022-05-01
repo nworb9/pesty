@@ -7,7 +7,7 @@ body {
   position: relative;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
@@ -59,4 +59,43 @@ img {
   object-position: 0% 100%;
   position: fixed;
   width: 100%;
+  opacity: 0;
+}
+
+.display {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+aside {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-bar {
+  display: grid;
+  grid-row-gap: 12px;
+}
+
+progress {
+  border: 1px solid #ff7f8c;
+  height: 20px;
+  width: 400px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background: #fff;
+}
+
+progress[value]::-webkit-progress-value {
+  background: #f7d3c6;
 }

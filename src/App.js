@@ -16,14 +16,28 @@ const images = [
   { name: "king", img: king },
 ];
 
+const Loading = ({ calculatedWidth }) => (
+  <aside>
+    <div className="loading-bar">
+      <label htmlFor="images-loaded">Loading all your favorite pigs...</label>
+      <progress id="images-loaded" max="100" value={calculatedWidth}></progress>
+    </div>
+  </aside>
+);
+
 const App = () => {
   const [currentImage, setCurrentImage] = useState(0);
+  const [numLoaded, setNumLoaded] = useState(0);
 
   const handleClick = () => {
     const length = images.length - 1;
     setCurrentImage((currentImage) => {
       return currentImage < length ? currentImage + 1 : 0;
     });
+  };
+
+  const handleImageLoad = () => {
+    setNumLoaded((numLoaded) => numLoaded + 1);
   };
 
   return (
@@ -34,15 +48,22 @@ const App = () => {
       </header>
 
       <figure>
+        {numLoaded < images.length && (
+          <Loading calculatedWidth={numLoaded / images.length} />
+        )}
         <figcaption>
           {currentImage + 1} / {images.length}
         </figcaption>
-        <img
-          className={images[currentImage].name}
-          alt="a carousel of pig pictures"
-          src={images[currentImage].img}
-          onClick={handleClick}
-        />
+        {images.map(({ img }, index) => (
+          <img
+            className={currentImage === index ? "display" : "hide"}
+            key={img}
+            src={img}
+            alt="a carousel of pig pictures"
+            onClick={handleClick}
+            onLoad={handleImageLoad}
+          />
+        ))}
       </figure>
     </section>
   );
