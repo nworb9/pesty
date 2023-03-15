@@ -58,6 +58,7 @@ img {
   object-fit: scale-down;
   object-position: 0% 100%;
   position: fixed;
+  background: #f7d3c6;
   width: 100%;
   opacity: 0;
 }
